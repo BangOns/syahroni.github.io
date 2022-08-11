@@ -1,0 +1,130 @@
+.projected {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.projected::-webkit-scrollbar {
+  width: 3px;
+}
+.projected {
+  scrollbar-width: thin;
+  scrollbar-color: salmon rgb(236, 229, 228);
+}
+.projected::-webkit-scrollbar-track {
+  background: transparent;
+}
+.projected::-webkit-scrollbar-thumb {
+  background-color: salmon;
+  border-radius: 6px;
+}
+
+.textPro {
+  text-align: center;
+  padding: 5%;
+  font-size: 1.5em;
+}
+.textPro h1 span {
+  color: salmon;
+}
+.isiProject {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+  height: 74%;
+  justify-content: center;
+  gap: 5%;
+  padding-left: 45px;
+}
+.box1,
+.box2,
+.box3 {
+  width: 300px;
+  height: 300px;
+}
+.boxkotak1,
+.boxkotak2,
+.boxkotak3 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px rgb(134, 131, 131);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+.imgKotak1,
+.imgKotak2,
+.imgKotak3 {
+  position: relative;
+  box-sizing: border-box;
+}
+.imgKotak1 img,
+.imgKotak2 img,
+.imgKotak3 img {
+  border-radius: 3px;
+  width: 100%;
+}
+.deskripsiKotak1,
+.deskripsiKotak2,
+.deskripsiKotak3 {
+  width: auto;
+  height: 100%;
+}
+.jdldes1 h3,
+.jdldes2 h3,
+.jdldes3 h3 {
+  padding: 3px;
+  text-align: center;
+}
+.jdldes1 a,
+.jdldes2 a,
+.jdldes3 a {
+  color: black;
+  text-decoration: none;
+}
+.jdldes1 span a:active,
+.jdldes2 span a:active,
+.jdldes3 span a:active {
+  color: black;
+  text-decoration: none;
+}
+.txtdes1,
+.txtdes2,
+.txtdes3 {
+  width: 100%;
+  height: 90%;
+}
+.list_boxData1,
+.list_boxData2,
+.list_boxData3 {
+  height: 100%;
+}
+.txtdes1 ul li,
+.txtdes2 ul li,
+.txtdes3 ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.txtdes1 ul li p,
+.txtdes2 ul li p,
+.txtdes3 ul li p {
+  font-size: 1em;
+  padding-left: 10px;
+}
+.txtdes1 ul li span,
+.txtdes2 ul li span,
+.txtdes3 ul li span {
+  font-size: 1em;
+  padding-right: 10px;
+  color: rgb(175, 32, 17);
+}
+
+@media screen and (max-width: 420px) {
+  .isiProject {
+    padding-left: 1%;
+  }
+}

@@ -1,0 +1,370 @@
+/* Bagian Luar */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "home";
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-image: linear-gradient(
+    to bottom left,
+    lightblue,
+    pink,
+    white,
+    lightblue
+  );
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+.container {
+  width: 75%;
+  height: 80vh;
+  box-shadow: 1px 0px 5px rgb(155, 153, 153);
+  box-sizing: border-box;
+  margin: 100px auto;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+.pinggir {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25px;
+  left: -45px;
+  width: 70px;
+  height: 90%;
+  justify-content: space-evenly;
+  box-shadow: 1px 0px 10px rgb(155, 153, 153);
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  padding-left: 20px;
+}
+.pinggir li {
+  display: block;
+  width: 50px;
+  box-shadow: 1px 0px 10px rgb(150, 145, 145);
+  border-radius: 10px;
+}
+.pinggir li img {
+  z-index: 11;
+  padding: 5px;
+}
+.pinggir li:hover {
+  transform: scale(1.1);
+}
+.pinggir li:active {
+  transform: scale(1.2);
+  transition: all 0.2s;
+}
+.data:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  animation-name: anime;
+  animation-duration: 0.4s;
+  animation-delay: 0.5s;
+}
+.active {
+  animation-name: muncul;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anime {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(45deg);
+  }
+  60% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes muncul {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Sampai Sini */
+
+/* Bagian Dalam */
+.home {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 10px auto;
+}
+.gambar {
+  width: 0;
+  flex-grow: 1.5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.gambar img {
+  width: 110%;
+  max-height: 90%;
+}
+.gambar .gam {
+  opacity: 0;
+}
+.active {
+  opacity: 1;
+}
+.gambar li {
+  width: 16em;
+  position: absolute;
+  right: 19%;
+}
+.gambar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-self: center;
+  width: 100%;
+  position: relative;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 0;
+  flex-grow: 2;
+}
+.text p {
+  width: 90%;
+  color: salmon;
+  font-size: 20px;
+}
+.text h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.text h3 {
+  margin-top: -10px;
+  font-size: 40px;
+}
+.sosmed {
+  list-style: none;
+  display: flex;
+  width: 90%;
+  height: 45%;
+  justify-content: center;
+}
+.sosmed li a {
+  display: block;
+}
+.sosmed li a img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 50%;
+  padding: 0.2px;
+}
+.sosmed li:nth-child(1) a img:hover {
+  transform: scale(1.2) rotate(360deg);
+  transition: all 0.5s ease;
+  box-shadow: 1px 0px 10px rgb(139, 171, 230);
+}
+.sosmed li:nth-child(2) a img:hover {
+  transform: scale(1.2) rotate(360deg);
+  transition: all 0.5s ease;
+  box-shadow: 1px 0px 10px rgb(255, 93, 220);
+}
+.sosmed li:nth-child(3) a img:hover {
+  transform: scale(1.2) rotate(360deg);
+  transition: all 0.5s ease;
+  box-shadow: 1px 0px 10px rgb(59, 247, 34);
+}
+@font-face {
+  font-family: "home";
+  src: url("font/Dosis-Bold.ttf") format("truetype");
+}
+/* sampe sini */
+/* titik ganti */
+.titik {
+  display: flex;
+  width: 44px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 17%;
+  margin-left: 10%;
+}
+.titik span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.titik span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* sampe sini */
+
+/* Responsive media */
+/* desktop */
+@media screen and (max-width: 1050px) {
+  .titik {
+    margin-left: -16%;
+  }
+}
+/* Laptops */
+@media screen and (max-width: 992px) {
+  #hash {
+    display: block;
+  }
+  .gambar {
+    width: 100%;
+    height: 50%;
+    padding-left: 2.1%;
+  }
+  .gambar img {
+    width: 100%;
+  }
+  .gambar ul {
+    width: 50%;
+  }
+  .titik {
+    margin-right: 8%;
+    margin-bottom: -7%;
+    margin-left: 0;
+  }
+  .text {
+    display: block;
+    width: 83%;
+    margin: auto 5%;
+    text-align: center;
+  }
+  .text p {
+    width: 100%;
+  }
+  .sosmed {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 772px) {
+  .text {
+    margin-top: 2%;
+  }
+  .text .quotes {
+    font-size: 0.98em;
+    margin: 0;
+    padding: 0;
+  }
+  .text h2 {
+    font-size: 40px;
+  }
+  .text h3 {
+    font-size: 30px;
+  }
+  .gambar {
+    padding-left: 7%;
+  }
+  .titik {
+    margin-right: 19.5%;
+    margin-bottom: -8%;
+  }
+}
+/* tablet 2 */
+@media screen and (max-width: 540px) {
+  .gambar li {
+    right: 2%;
+  }
+  .titik {
+    margin-bottom: -12%;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 492px) {
+  body {
+    overflow-x: hidden;
+    background: linear-gradient(
+        to bottom left,
+        lightblue,
+        pink,
+        white,
+        lightblue
+      )
+      no-repeat center center fixed;
+  }
+  .container {
+    box-shadow: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  .pinggir {
+    position: fixed;
+    bottom: 0%;
+    top: auto;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    height: 10%;
+    width: 95%;
+    border-top: 2px solid;
+    padding-right: 3%;
+    padding-left: 2%;
+  }
+  .pinggir li {
+    margin-top: 3%;
+    width: 62px;
+    height: 50px;
+  }
+  .pinggir img {
+    width: 53%;
+  }
+  .home {
+    height: 100vh;
+  }
+  .gambar li {
+    right: 20%;
+  }
+  .gambar img {
+    width: 18em;
+  }
+  .text {
+    margin-top: 0;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .gambar li {
+    right: 5%;
+  }
+  .titik {
+    margin-bottom: -17%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .pinggir {
+    gap: 4%;
+  }
+  .pinggir li {
+    margin-top: 3%;
+    width: 57px;
+    height: 42px;
+  }
+}

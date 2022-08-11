@@ -1,0 +1,283 @@
+.contact {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.contact::-webkit-scrollbar {
+  width: 3px;
+}
+.contact {
+  scrollbar-width: thin;
+  scrollbar-color: salmon rgb(236, 229, 228);
+}
+.contact::-webkit-scrollbar-track {
+  background: transparent;
+}
+.contact::-webkit-scrollbar-thumb {
+  background-color: salmon;
+  border-radius: 6px;
+}
+.txtContact {
+  text-align: center;
+  padding: 2%;
+  font-size: 1.5em;
+}
+.txtContact h1 span {
+  color: salmon;
+}
+
+.isiKontak {
+  width: 92%;
+  display: flex;
+  padding-left: 7%;
+  gap: 2%;
+}
+.form {
+  flex-basis: 45%;
+}
+.hasil {
+  display: none;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  position: relative;
+}
+
+.hasilInput {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.hasilInput ul {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  flex-basis: 100%;
+  padding-right: 50px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.hasilInput ul li {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.tampilHasil {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.tampilHasil p:hover {
+  cursor: pointer;
+  color: salmon;
+}
+.bungkus {
+  display: block;
+}
+.MyContact {
+  display: flex;
+  flex-basis: 53%;
+}
+.ContactUS,
+.FollowUs {
+  flex-basis: 50%;
+}
+.label label {
+  padding: 5px;
+  font-family: "p_thin";
+  font-weight: 300;
+}
+.label {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+input[type="text"],
+input[type="email"] {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 1px black;
+  width: 95%;
+  padding: 2%;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.textArea textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 85px;
+  box-shadow: 0px 0px 1px black;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.button {
+  padding: 2%;
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  background-color: salmon;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 4% auto;
+}
+
+.button img {
+  width: 15px;
+  height: 15px;
+  filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(184deg)
+    brightness(98%) contrast(96%);
+}
+.button button {
+  border: none;
+  background-color: salmon;
+  flex-basis: 50%;
+  color: white;
+}
+.button button:hover {
+  cursor: pointer;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.textContactUs,
+.textFollowUs {
+  padding-bottom: 5%;
+  font-size: 1.3em;
+  color: rgb(173, 20, 2);
+}
+.textContactUs::after,
+.textFollowUs::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: rgb(158, 45, 32);
+}
+.email,
+.lokasi,
+.telepon,
+.wa,
+.Linkedin,
+.Instagram,
+.Youtube,
+.Facebook {
+  display: flex;
+  width: 100%;
+  margin: 15px auto;
+  gap: 3%;
+}
+.imgEmail,
+.imgLokasi,
+.imgTelepon,
+.imgWa,
+.imglink,
+.imgig,
+.imgyt,
+.imgfb {
+  padding: 3%;
+  background-color: rgba(190, 187, 187, 0.7);
+  border-radius: 50%;
+  width: 16px;
+  height: 18px;
+}
+.imgEmail img,
+.imgLokasi img,
+.imgTelepon img,
+.imgWa img,
+.imglink img,
+.imgig img,
+.imgyt img,
+.imgfb img {
+  filter: invert(20%) sepia(94%) saturate(3783%) hue-rotate(353deg)
+    brightness(99%) contrast(82%);
+}
+.imgEmail img:hover,
+.imgLokasi img:hover,
+.imgTelepon img:hover,
+.imgWa img:hover,
+.imglink img:hover,
+.imgig img:hover,
+.imgyt img:hover,
+.imgfb img:hover {
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(7472%) hue-rotate(184deg)
+    brightness(98%) contrast(96%);
+  transform: scale(1.1);
+  transition: all 0.3 ease;
+}
+.imgEmail:hover,
+.imgLokasi:hover,
+.imgTelepon:hover,
+.imgWa:hover,
+.imglink:hover,
+.imgig:hover,
+.imgyt:hover,
+.imgfb:hover {
+  cursor: pointer;
+  background-color: salmon;
+  transform: scale(1.1);
+  transition: all 0.3 ease;
+}
+.textEmail,
+.textLokasi,
+.textTelepon,
+.textWa,
+.textlink,
+.textig,
+.textyt,
+.textfb {
+  align-self: center;
+}
+
+.textEmail a,
+.textLokasi a,
+.textTelepon a,
+.textWa a,
+.textlink a,
+.textig a,
+.textyt a,
+.textfb a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.95em;
+}
+.textEmail a:hover,
+.textLokasi a:hover,
+.textTelepon a:hover,
+.textWa a:hover,
+.textlink a:hover,
+.textig a:hover,
+.textyt a:hover,
+.textfb a:hover {
+  color: rgb(212, 48, 30);
+}
+
+@media screen and (max-width: 1192px) {
+  .isiKontak {
+    flex-direction: column;
+  }
+
+  .bungkus {
+    width: 70%;
+    margin: auto auto;
+  }
+}
+@media screen and (max-width: 879px) {
+  .MyContact {
+    flex-direction: column;
+    padding-left: 6%;
+  }
+}
