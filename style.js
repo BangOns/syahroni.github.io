@@ -4,7 +4,7 @@ let Data_Diri = {
     Nama: "Syahroni",
     Divisi: "Front End Developer",
     quotes:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis, sequi, officia provident non asperiores ullam, deserunt id porro unde animi sit recusandae esse magni velit dolores nihil iste explicabo?",
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis, sequi, officia provident non asperiores ullam, deserunt id porro unde animi sit recusandae esse magni velit dolores nihil iste explicabo",
     biotgl: {
       Lahir: "31 Mei 2003",
       Kota: "Jakarta",
